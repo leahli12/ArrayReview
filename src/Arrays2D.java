@@ -13,6 +13,7 @@ public class Arrays2D {
         }
         printArray();
         System.out.println(sum2D());
+        System.out.println(avg2D());
     }
 
     public void printArray(){
@@ -33,5 +34,10 @@ public class Arrays2D {
             }
         }
         return sum;
+    }
+
+    public double avg2D(){
+        int size = nums.length * nums[0].length;
+        return sum2D()/size;
     }
 }
