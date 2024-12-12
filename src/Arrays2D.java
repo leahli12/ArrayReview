@@ -12,6 +12,7 @@ public class Arrays2D {
             }
         }
         printArray();
+        System.out.println(sum2D());
     }
 
     public void printArray(){
@@ -22,5 +23,15 @@ public class Arrays2D {
             }
             System.out.println();
         }
+    }
+
+    public int sum2D(){
+        int sum = 0;
+        for(int r = 0; r < nums.length; r++){
+            for(int c = 0; c < nums[r].length; c++) {
+                sum += nums[r][c];
+            }
+        }
+        return sum;
     }
 }
