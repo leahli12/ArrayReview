@@ -14,6 +14,7 @@ public class Array1DObjects {
         }
         printArray();
         System.out.println(addPops());
+        System.out.println(averagePops());
     }
 
     public void printArray(){
@@ -28,5 +29,10 @@ public class Array1DObjects {
             sum += countries[i].getPop();
         }
         return(sum);
+    }
+
+    public int averagePops(){
+        int average = addPops()/countries.length;
+        return average;
     }
 }
